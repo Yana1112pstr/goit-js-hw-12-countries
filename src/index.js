@@ -2,6 +2,8 @@ import './sass/main.scss';
 //import debounce from 'lodash/debounce ';
 import fetchCountries from './js/fetchCountries';
 
+import countryCardTpl from './templates/country-card.hbs';
+
 const refs = {
     searchQuery : document.querySelector('#searchQuery')
 }
