@@ -14,6 +14,10 @@ body {
   background-image: url(../images/bg-pattern.609e53a8.png);
 }
 
+.list-style {
+  list-style: none;
+}
+
 .form {
   background-color: #cfcfcf;
 }
@@ -23,7 +27,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 30px;
-  margin: 100px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   position: static;
 }
 
@@ -45,5 +51,20 @@ body {
   padding: 20px;
   margin-top: 4px;
   margin-bottom: 10px;
+}
+
+.wrapper {
+  display: block;
+  text-align: center;
+}
+
+.form-list {
+  display: block;
+  margin-left: 100px;
+  padding-left: 100px;
+}
+
+.form-ul {
+  font: 14px "Trebuchet MS", "Lucida Sans";
 }
 /*# sourceMappingURL=main.css.map */

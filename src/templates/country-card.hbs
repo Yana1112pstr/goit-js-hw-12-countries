@@ -1,13 +1,26 @@
-<div class="country-name">
-    <h1>{{name}}</h1>
+<div class='country-name'>
+  <h1>{{name}}</h1>
 </div>
-<div class="country-info">
-    <ul>
-        <li>Capital: {{capital}}</li>
-        <li>Region: {{region}}</li>
-        <li>languages: {{languages}}</li>
-    </ul>
+<div class='country-info'>
+  <ul>
+    <li class="list-style">Capital: {{capital}}</li>
+    <li class="list-style">Region: {{region}}</li>
+    <li class="list-style">Languages: 
+        <ul>
+            {{#each languages}}
+                <li class="list-style">{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </li>    
+  </ul>
 </div>
-<div class="country-flag">
-    <img src="{{flag}}" alt="flag country">
+<div class='country-flag'>
+  <img
+              {{#each flags}}
+                src={{this}}
+              {{/each}}
+                alt='flag of {{name}}'
+                width='200'
+            />
+
 </div>
